@@ -16,7 +16,7 @@
         android:id="@+id/home_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimaryDark">
+        android:background="#FFFFFF">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             <ImageView
                 android:id="@+id/send"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="28dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="10dp"
@@ -34,12 +34,19 @@
 
         </RelativeLayout>
 
-
-
-
     </androidx.appcompat.widget.Toolbar>
 
+
 </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_home"
+        android:layout_width="405dp"
+        android:layout_height="672dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="5dp" />
 
 
 </RelativeLayout>
