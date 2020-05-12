@@ -6,6 +6,37 @@
     android:layout_height="match_parent"
     tools:context="Controller.AccountSettingsActivity">
 
+    <TextView
+
+        android:id="@+id/delete_acc_btn"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_image_view_profile_frag"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="-494dp"
+        android:gravity="center"
+        android:text="Borrar perfil"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/change_image_text_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="382dp"
+        android:gravity="center"
+        android:text="cambiar foto"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_gravity="center"
         android:layout_width="match_parent"
@@ -13,14 +44,17 @@
         android:orientation="vertical"
         android:layout_marginTop="4dp"/>
 
+
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
+        android:id="@+id/profile_image_view_profile_frag"
         android:layout_width="96dp"
         android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
 
-        android:layout_marginBottom="426dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="416dp"
         android:src="@drawable/profile"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp" />
@@ -28,25 +62,23 @@
     <TextView
 
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
+        android:text="Actualiza perfil"
         android:textColor="@android:color/holo_blue_dark"
-        android:text="Change Your Profile Picture"
-        android:textStyle="bold"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content" />
-
+        android:textStyle="bold" />
 
     <EditText
 
-        android:id="@+id/editText_name"
+        android:id="@+id/full_name_profile_frag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginBottom="319dp"
         android:drawablePadding="16dp"
-        android:hint="Name"
+        android:hint="Nombre"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="16dp"
@@ -54,14 +86,14 @@
 
     <EditText
 
-        android:id="@+id/about"
+        android:id="@+id/username_profile_frag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="225dp"
+        android:layout_marginBottom="254dp"
         android:drawablePadding="16dp"
-        android:hint="About "
+        android:hint="Usuario"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="16dp"
@@ -69,14 +101,14 @@
 
     <EditText
 
-        android:id="@+id/editText_mobile"
+        android:id="@+id/bio_profile_frag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="184dp"
         android:drawablePadding="16dp"
-        android:hint="Mobile"
+        android:hint="Bio"
         android:inputType="phone"
         android:maxLines="1"
         android:padding="16dp"
@@ -84,17 +116,16 @@
 
     <Button
 
-        android:id="@+id/bttnupdate"
-
+        android:id="@+id/save_infor_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="112dp"
         android:clickable="true"
         android:padding="16dp"
-        android:text=" Update"
+        android:text="Actualizar"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
