@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Controller.AccountSettingsActivity">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="426dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Change Your Profile Picture"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="324dp"
+        android:drawablePadding="16dp"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:textColorHint="#1d1d1d" />
+
+    <EditText
+
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="225dp"
+        android:drawablePadding="16dp"
+        android:hint="About "
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:textColorHint="#1d1d1d" />
+
+    <EditText
+
+        android:id="@+id/editText_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="130dp"
+        android:drawablePadding="16dp"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:textColorHint="#1d1d1d" />
+
+    <Button
+
+        android:id="@+id/bttnupdate"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="47dp"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text=" Update"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
