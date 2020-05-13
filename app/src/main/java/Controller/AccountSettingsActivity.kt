@@ -2,7 +2,7 @@ package Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import ninjas.instagram.myapplication.R
+import com.mysource.R
 
 class AccountSettingsActivity : AppCompatActivity() {
 

@@ -8,7 +8,8 @@ import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import ninjas.instagram.myapplication.R
+import com.mysource.R
+
 
 class MainActivity : AppCompatActivity() {
 

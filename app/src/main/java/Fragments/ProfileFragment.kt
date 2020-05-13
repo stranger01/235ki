@@ -7,11 +7,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.mysource.R
 import kotlinx.android.synthetic.main.activity_account_settings.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
-import ninjas.instagram.myapplication.R
+
 
 /**
  * A simple [Fragment] subclass.
