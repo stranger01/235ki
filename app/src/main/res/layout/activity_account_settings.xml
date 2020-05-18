@@ -4,7 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Controller.AccountSettingsActivity">
+    tools:context="Controller.AccountSettingsActivity"
+    android:background="@drawable/back_ui">
+
+    <Button
+
+        android:id="@+id/save_infor_profile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="112dp"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="Actualizar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
 
@@ -116,16 +133,16 @@
 
     <Button
 
-        android:id="@+id/save_infor_profile"
+        android:id="@+id/logout_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="52dp"
         android:clickable="true"
         android:padding="16dp"
-        android:text="Actualizar"
+        android:text="Logout"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
