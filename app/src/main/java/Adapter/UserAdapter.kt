@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
 import com.mysource.R
+import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.user_item_layout.view.*
 import org.jetbrains.annotations.NonNls
@@ -31,7 +32,11 @@ class UserAdapter(
 
     override fun onBindViewHolder(holder: UserAdapter.ViewHolder, position: Int) {
        val user = mUser[position]
-        holder.userNameTextView.text 
+        holder.userNameTextView.text = user.getUsername()
+        holder.userFullnameTextView.text = user.getFullname()
+
+        Picasso.get().load(user.getImage()).placeholder(R.drawable.profile).into(holder.userProfileImage)
+
     }
 
     class ViewHolder(@NonNull itemView: View) : RecyclerView.ViewHolder(itemView){
